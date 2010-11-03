@@ -497,3 +497,6 @@ def profile(func, profiler_filename="result.prof"):
 
 def formatPercent(value):
     return "%3d%%" % (value * 100)
+
+def quantize(input, interval):
+    return (input // interval) * interval
